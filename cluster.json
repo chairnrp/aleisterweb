@@ -17,3 +17,12 @@
         }
     ]
 }
+
+
+cluster1@cluster1-VirtualBox:/opt$ /opt/onos/bin/onos-form-cluster 192.168.56.102 192.168.56.103
+Forming cluster on 192.168.56.102...
+curl: (22) The requested URL returned error: 400 Bad Request
+Forming cluster on 192.168.56.103...
+curl: (22) The requested URL returned error: 400 Bad Request
+
+            
