@@ -1,0 +1,22 @@
+kelompok2@kelompok2-sppj:~/ryu/ryu/app$ ryu-manager simple_switch_13.py --ofp-tcp-listen-port 6633
+Traceback (most recent call last):
+  File "/usr/local/bin/ryu-manager", line 11, in <module>
+    load_entry_point('ryu==4.34', 'console_scripts', 'ryu-manager')()
+  File "/usr/lib/python2.7/dist-packages/pkg_resources/__init__.py", line 480, in load_entry_point
+    return get_distribution(dist).load_entry_point(group, name)
+  File "/usr/lib/python2.7/dist-packages/pkg_resources/__init__.py", line 2693, in load_entry_point
+    return ep.load()
+  File "/usr/lib/python2.7/dist-packages/pkg_resources/__init__.py", line 2324, in load
+    return self.resolve()
+  File "/usr/lib/python2.7/dist-packages/pkg_resources/__init__.py", line 2330, in resolve
+    module = __import__(self.module_name, fromlist=['__name__'], level=0)
+  File "/usr/local/lib/python2.7/dist-packages/ryu/cmd/manager.py", line 33, in <module>
+    from ryu.app import wsgi
+  File "/usr/local/lib/python2.7/dist-packages/ryu/app/wsgi.py", line 23, in <module>
+    from tinyrpc.server import RPCServer
+  File "/usr/local/lib/python2.7/dist-packages/tinyrpc/__init__.py", line 4, in <module>
+    from .protocols import *
+  File "/usr/local/lib/python2.7/dist-packages/tinyrpc/protocols/__init__.py", line 15
+    def __init__(self) -> None:
+                       ^
+SyntaxError: invalid syntax
